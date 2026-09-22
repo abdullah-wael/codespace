@@ -1,20 +1,8 @@
 {
-  "name": "codespace",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "github.copilot",
-        "github.copilot-chat"
-      ],
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      }
-    }
+  "name": "data-eng-env",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "remoteUser": "codespace"
+  "forwardPorts": [9000, 9001]
 }
